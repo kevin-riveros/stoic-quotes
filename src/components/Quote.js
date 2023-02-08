@@ -12,7 +12,7 @@ export default function Quote() {
     }
   }, []);
 
-  if (!width && !height) {
+  if (!height) {
     return null;
   }
 
