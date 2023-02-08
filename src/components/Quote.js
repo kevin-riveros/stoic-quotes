@@ -32,10 +32,9 @@ export default function Quote() {
       });
   };
 
-  if (!height) {
+  if (!height || !randomQuote) {
     return null;
   }
-
   return (
     <Box
       display="flex"
