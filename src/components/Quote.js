@@ -1,9 +1,21 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Montserrat } from "@next/font/google";
 
 const inter = Montserrat({ subsets: ["latin"] });
 
 export default function Quote() {
+  const [height, setHeight] = useState(null);
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      setHeight(window.innerHeight);
+    }
+  }, []);
+
+  if (!width && !height) {
+    return null;
+  }
+
   return (
     <div
       style={{
@@ -15,7 +27,7 @@ export default function Quote() {
         top: 0,
         left: 0,
         width: "100%",
-        height: "100vh",
+        height: `${height}px`,
       }}
     >
       <p
