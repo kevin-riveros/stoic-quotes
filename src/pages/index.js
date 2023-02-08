@@ -1,10 +1,7 @@
 import Head from "next/head";
 import StartFieldBackground from "@/components/StartFieldBackground";
 import Quote from "@/components/Quote";
-
-const Box = ({ children }) => (
-  <div style={{ display: "flex", justifyContent: "center" }}>{children}</div>
-);
+import { Box } from "@chakra-ui/react";
 
 export default function Home() {
   return (
@@ -18,8 +15,10 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <StartFieldBackground />
-      <Quote />
+      <Box bg="black">
+        <StartFieldBackground />
+        <Quote />
+      </Box>
     </>
   );
 }
