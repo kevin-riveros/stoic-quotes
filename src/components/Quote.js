@@ -25,7 +25,7 @@ export default function Quote() {
           textAlign: "center",
         }}
       >
-        "Te conviertes en lo que le das tu atención" Epicteto.
+        “Te conviertes en lo que le das tu atención” Epicteto.
       </p>
     </div>
   );
